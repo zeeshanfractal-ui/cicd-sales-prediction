@@ -16,7 +16,7 @@ print('model is ready to train')
 # Train model
 model = LinearRegression()
 model.fit(X_train, y_train)
-
+print('model is being trained')
 # Evaluate
 y_pred = model.predict(X_test)
 r2 = r2_score(y_test, y_pred)
